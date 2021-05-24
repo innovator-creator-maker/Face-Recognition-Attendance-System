@@ -90,7 +90,6 @@ labels = []
 
 class_id = 0  # Labels for the given file
 names = {}  # Mapping btw id - name
-phone_number = {}
 
 # Data Preparation
 for fx in os.listdir(dataset_path):
@@ -171,7 +170,6 @@ while True:
     for i in total_student_in_class:
         if i not in class_total_present:
             res_list.append(i)
-    time.sleep(10)
     print(res_list)
 
     maarkattndnce(i)
